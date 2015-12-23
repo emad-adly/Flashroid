@@ -9,12 +9,12 @@
     android:layoutDirection="ltr">
 
 
-    <ImageView
+    <RelativeLayout
         android:id="@+id/backgroundView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_margin="20dp"
-        android:background="@color/colorPrimary"/>
+        android:background="@color/colorPrimary">
 
     <ImageView
         android:id="@+id/flashIV"
@@ -31,6 +31,8 @@
         android:layout_centerHorizontal="true"
         android:layout_below="@id/flashIV"
         android:textColor="#FFFFFF"/>
+
+    </RelativeLayout>
 
 
 </RelativeLayout>
