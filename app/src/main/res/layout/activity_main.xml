@@ -5,8 +5,32 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@android:color/background_dark"
-    tools:context="com.emadadly.flashroid.MainActivity">
+    tools:context="com.emadadly.flashroid.MainActivity"
+    android:layoutDirection="ltr">
 
+
+    <ImageView
+        android:id="@+id/backgroundView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:background="@color/colorPrimary"/>
+
+    <ImageView
+        android:id="@+id/flashIV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:src="@drawable/flash_off"
+        android:layout_centerInParent="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Touch the circle to flash on/off"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/flashIV"
+        android:textColor="#FFFFFF"/>
 
 
 </RelativeLayout>
