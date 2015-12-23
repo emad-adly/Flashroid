@@ -38,4 +38,11 @@ public class MainActivity extends Activity implements CameraFlashChangeListener,
             cameraController.flashOn();
         }
     }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        cameraController.freeCamera();
+        cameraController = null;
+    }
 }

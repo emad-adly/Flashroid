@@ -86,4 +86,10 @@ public class CameraFlashController {
             }
         });
     }
+
+    public void freeCamera() {
+        camera.stopPreview();
+        camera.release();
+        camera = null;
+    }
 }
